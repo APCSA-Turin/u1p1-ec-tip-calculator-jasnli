@@ -62,7 +62,7 @@ public class ExtraCredit {
         int people = 6;
         int percent = 25;
         double cost = 52.27;
-        String items = "salmon\npizza\nsalad\nfrench fries\nmilkshake\n"; 
+        String items = ""; 
 
         //Your scanner object and while loop should go here
         
@@ -71,9 +71,11 @@ public class ExtraCredit {
         // I LOVE STACK OVERFLOW
         Scanner scan = new Scanner(System.in);
         String input = "";
+        // CHECK IF IT IS EQUAL TO -1 AND RUNS A LOOP
         while (!"-1".equals(input)) {
             System.out.println("Enter an item name or type '-1' to finish:");
             input = scan.nextLine();
+            // ADD TO THE LIST
             if (!"-1".equals(input)) {
                 items += input + "\n";
             }
